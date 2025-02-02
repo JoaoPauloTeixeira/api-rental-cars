@@ -1,0 +1,422 @@
+{
+	"id": "eabedb3e-e720-4d56-b5ac-a0110a6afb6d",
+	"name": "api-rental-cars",
+	"timestamp": "2024-10-17T19:25:24.903Z",
+	"collection_id": "22996773-3964892a-42f1-4200-956e-9f403d968fe0",
+	"folder_id": 0,
+	"environment_id": "0",
+	"totalPass": 14,
+	"delay": 0,
+	"persist": true,
+	"status": "finished",
+	"startedAt": "2024-10-17T19:25:22.864Z",
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "93057722-35fd-4f8d-9775-8d07152d7f65",
+			"name": "inactivate",
+			"url": "http://localhost:3000/driver/inactivate",
+			"time": 29,
+			"responseCode": {
+				"code": 500,
+				"name": "Internal Server Error"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				29
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "c60c2d87-6e83-4d00-b665-bccb231cc226",
+			"name": "create",
+			"url": "http://localhost:3000/driver",
+			"time": 63,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				63
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "574327d6-c3e2-4230-b04f-c9bd2a115040",
+			"name": "patch",
+			"url": "http://localhost:3000/driver/a386aa15-6c7a-41bf-a26c-875ab92c5a1c",
+			"time": 51,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				51
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "b2abfbcb-e5c1-4d4f-a67a-cf7adf6ccad9",
+			"name": "getById",
+			"url": "http://localhost:3000/driver/a386aa15-6c7a-41bf-a26c-875ab92c5a1c",
+			"time": 5,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				5
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "1a8c2c46-9d80-4f6f-a98f-93c33c531310",
+			"name": "get",
+			"url": "http://localhost:3000/driver",
+			"time": 5,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"validate response": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"validate response": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				5
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"validate response": true
+				}
+			]
+		},
+		{
+			"id": "9d2bfccd-7643-4b53-95e3-fe9c7fe87315",
+			"name": "getById",
+			"url": "http://localhost:3000/vehicle/b460c74c-7b31-43ee-907c-ed179ae68315",
+			"time": 6,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				6
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "69139faa-34f0-42f8-86d0-f0f0f77b43db",
+			"name": "get",
+			"url": "http://localhost:3000/vehicle",
+			"time": 10,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"validate response": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"validate response": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				10
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"validate response": true
+				}
+			]
+		},
+		{
+			"id": "f60d6ef9-c93d-4d6e-be2f-8721b59ffc63",
+			"name": "create",
+			"url": "http://localhost:3000/vehicle",
+			"time": 53,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				53
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "96fe1581-ed10-4f98-bb93-50e016383cc4",
+			"name": "update",
+			"url": "http://localhost:3000/vehicle/b460c74c-7b31-43ee-907c-ed179ae68315",
+			"time": 50,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				50
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "9e9f1bb9-ae98-4997-ade6-91e7ccd622f8",
+			"name": "createRental",
+			"url": "http://localhost:3000/rental",
+			"time": 184,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				184
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "057be2fb-92b5-4af9-94c4-b62ab3a12731",
+			"name": "endRental",
+			"url": "http://localhost:3000/rental/ends",
+			"time": 54,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				54
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "a7fee593-8428-476b-8a2d-95e7cb65a61c",
+			"name": "getById",
+			"url": "http://localhost:3000/rental/758e3d90-f5c1-4d2a-a325-9e9f3c9e3c9c",
+			"time": 5,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"validate response": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"validate response": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				5
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"validate response": true
+				}
+			]
+		},
+		{
+			"id": "4eedea8b-8f9d-4619-bded-5d282c915dfd",
+			"name": "get",
+			"url": "http://localhost:3000/rental?active=true",
+			"time": 6,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"validate response": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"validate response": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				6
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"validate response": true
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 521,
+	"collection": {
+		"requests": [
+			{
+				"id": "93057722-35fd-4f8d-9775-8d07152d7f65",
+				"method": "POST"
+			},
+			{
+				"id": "c60c2d87-6e83-4d00-b665-bccb231cc226",
+				"method": "POST"
+			},
+			{
+				"id": "574327d6-c3e2-4230-b04f-c9bd2a115040",
+				"method": "PATCH"
+			},
+			{
+				"id": "b2abfbcb-e5c1-4d4f-a67a-cf7adf6ccad9",
+				"method": "GET"
+			},
+			{
+				"id": "1a8c2c46-9d80-4f6f-a98f-93c33c531310",
+				"method": "GET"
+			},
+			{
+				"id": "9d2bfccd-7643-4b53-95e3-fe9c7fe87315",
+				"method": "GET"
+			},
+			{
+				"id": "69139faa-34f0-42f8-86d0-f0f0f77b43db",
+				"method": "GET"
+			},
+			{
+				"id": "f60d6ef9-c93d-4d6e-be2f-8721b59ffc63",
+				"method": "POST"
+			},
+			{
+				"id": "96fe1581-ed10-4f98-bb93-50e016383cc4",
+				"method": "PATCH"
+			},
+			{
+				"id": "9e9f1bb9-ae98-4997-ade6-91e7ccd622f8",
+				"method": "POST"
+			},
+			{
+				"id": "057be2fb-92b5-4af9-94c4-b62ab3a12731",
+				"method": "POST"
+			},
+			{
+				"id": "a7fee593-8428-476b-8a2d-95e7cb65a61c",
+				"method": "GET"
+			},
+			{
+				"id": "4eedea8b-8f9d-4619-bded-5d282c915dfd",
+				"method": "GET"
+			}
+		]
+	}
+}
