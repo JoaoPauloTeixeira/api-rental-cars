@@ -1,0 +1,43 @@
+services:
+  postgresdb:
+    image: postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: "postgres"
+      POSTGRES_PASSWORD: "loca_2025_test"
+      POSTGRES_DB: "loca_db"
+    ports:
+      - "5432:5432"
+    networks:
+      - locadora      
+    volumes:
+       - postgres:/data/postgres
+  app:
+    depends_on:
+      - postgresdb
+    build:
+      context: ./
+      dockerfile: ./Dockerfile    
+    restart: unless-stopped
+    env_file: ./.env
+    ports:
+      - "3000:8080"
+    volumes:
+      - ./:/app      
+    environment:
+      DB_HOST: "postgresdb"
+      DB_USER: "postgres"
+      DB_PASSWORD: "loca_2025_test"
+      DB_NAME: "loca_db"
+      DB_PORT: "5432"
+    networks:
+      - locadora
+    stdin_open: true
+    tty: true
+
+networks:  
+  locadora:
+    driver: bridge
+    external: true
+volumes: 
+  postgres:
