@@ -33,7 +33,7 @@ class CreateVehicleRentalUseCase extends BaseUseCase<InputCreateVehicleRentalDto
         this.validateAvailableDriver(input)
       ])
 
-      await this.vehicleRentalRepo.insert({ ...input, id: v4(), active: true, vehicleBrand: responses[0].brand, driverName: responses[1].name })
+      await this.vehicleRentalRepo.insert({ ...input, id: v4(), active: true, vehicleLicensePlate: responses[0].licensePlate, driverName: responses[1].name })
 
       this.vehicleRepo.update({ id: input.vehicleId, available: false })
     } catch (error) {

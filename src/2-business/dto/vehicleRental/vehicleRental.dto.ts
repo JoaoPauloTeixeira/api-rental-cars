@@ -5,7 +5,7 @@ export interface InputCreateVehicleRentalDto {
     driverId: string
     driverName: string
     vehicleId: string
-    vehicleBrand: string
+    vehicleLicensePlate: string
     reason: string
     startDate: Date
     endDate: Date
