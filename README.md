@@ -21,6 +21,10 @@ A arquitetura utiliza tem como objetivo mover as dependências apenas dos nívei
 Com isso os códigos nas camadas internas não precisam ter conhecimento necessariamente das funções nas camadas externas. Os níveis mais internos não podem mencionar as variáveis, funções e classes que existem nas camadas externas.
 Uma das vantagens é que o sistema fica completamente testável, pois as regras de negócios podem ser validadas sem a necessidade da interface do usuário, banco de dados, servidor ou qualquer outro elemento externo e facilita a manutenção.
 
+## Testes unitarios
+
+Foram realizados testes unitarios da camada 2 de algumas classes UseCase. Foi utilizado as libs mocha, chai e sinon. Testes foram feitos com dados mockado da camada 4 (repository) simulando um Database.
+
 ## ➡️ Fluxograma das funcionalidades do projeto
 
 Fluxograma dos endpoints disponivel no google drive.
