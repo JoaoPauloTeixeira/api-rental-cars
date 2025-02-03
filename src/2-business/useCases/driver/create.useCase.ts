@@ -18,7 +18,7 @@ class CreateDriverUseCase extends BaseUseCase<InputCreateDriverDto, void> {
 
   async run(input: InputCreateDriverDto): Promise<void> {
     try {
-      await this.repo.insert({ ...input, id: v4(), active: true })
+      await this.repo.insert(input)
     } catch (error) {
       throw error
     }

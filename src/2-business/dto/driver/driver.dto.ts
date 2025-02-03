@@ -4,12 +4,12 @@ import { ActionSysParams } from "../../../1-enterprise/enum/sysParams"
 import { Address } from "../../../1-enterprise/models/driver"
 
 export interface InputCreateDriverDto {
-    id: string
+    id?: string
     name: string
     document: string
     birthDate: Date
     address: Address
-    active: boolean
+    active?: boolean
 }
 
 export interface InputInactivateDriverDto {

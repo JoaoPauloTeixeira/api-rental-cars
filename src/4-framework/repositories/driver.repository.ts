@@ -6,6 +6,7 @@ import { omit } from "lodash";
 import { IDriverRepository } from "../../2-business/repositories/driver.repository";
 import { DriverEntity } from "../../1-enterprise/entities/driver.entity";
 import { FindAndCountOptions, Op } from "sequelize";
+import { v4 } from "uuid";
 
 @Service()
 export class DriverRepository implements IDriverRepository {
@@ -23,7 +24,7 @@ export class DriverRepository implements IDriverRepository {
     }
     
     async insert(input: InputCreateDriverDto): Promise<void> {
-        await Driver.create(omit(input))
+        await Driver.create(omit({ ...input, id: v4(), active: true }))
     }
 
     async update(input: InputUpdateDriverDto): Promise<void> {
