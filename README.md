@@ -59,7 +59,7 @@ Caso este processo não funcione, será necessário seguir os passos abaixo:
 
 - instalar versão v18.20.4 do node
 - executar npm install ou yarn para instalar os pacotes
-- executar o comando docker run -d --name loca_seidor_db -p 5432:5432 -e POSTGRES_PASSWORD=loca_seidor_2024 -e POSTGRES_DB=loca_seidor_db -e POSTGRES_USER=postgres -v pgdata:/var/lib/postgresql/data postgres -d
+- executar o comando docker run -d --name loca_db -p 5432:5432 -e POSTGRES_PASSWORD=loca_2025_test -e POSTGRES_DB=loca_db -e POSTGRES_USER=postgres -v pgdata:/var/lib/postgresql/data postgres -d
   para criar o banco de dados manualmente.
 - npm run start ou yarn start pra iniciar a aplicacao.
 
