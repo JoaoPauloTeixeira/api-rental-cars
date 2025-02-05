@@ -65,7 +65,7 @@ Caso este processo não funcione, será necessário seguir os passos abaixo:
 
 ## ☕ Usando api-locadora
 
-Para usar foi disponibilziada uma collection do postman com todas as requicisoes do propjeto. O arquivo está na raíz do projeto com nome loca-seidor.postman_collection, basta importar e utilizar.
+Para usar foi disponibilziada uma collection do postman com todas as requicisoes do propjeto. O arquivo está na raíz do projeto com nome api-rental-cars_postman_collection, basta importar e utilizar.
 
 
 
